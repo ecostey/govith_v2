@@ -1,4 +1,4 @@
-//
+//Hard Coded Board Layout & Positions for Each Game Object
 export const lvl1 = [
     ['start', 'O', 'O', 'shade', 'O', 'O', 'O', 'O', 'O', 'O'],
     ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'],
