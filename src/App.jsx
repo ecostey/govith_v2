@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Board from './Board';
 import './App.css';
 import LandingPage from './LandingPage';
-import { lvl1, lvl2 } from './boardData';
+import GamePage from './GamePage'
 
 class App extends Component {
   constructor(props) {
@@ -10,32 +9,38 @@ class App extends Component {
     this.state = {
       currentView: 'LandingPage',
       level: '',
+      score: '',
     }
+    this.enterGame = this.enterGame.bind(this);
+  }
+
+  enterGame() {
+    this.setState({
+      currentView: 'GamePage'
+    });
   }
 
   switchView() {
     const { currentView } = this.state;
     switch (currentView) {
       case 'LandingPage':
-        return <LandingPage />
-      case 'Lvl1':
-        return <Board 
-        level={lvl1}
+        return <LandingPage 
+          onClickListener={this.enterGame}
         />
-      case 'Lvl2':
-        return <Board 
-        level={lvl2}
+      case 'GamePage':
+        return <GamePage 
+          level={this.level}
+          score={this.score}
         />
+        default:
     }
   }
 
   render() {
     return (
-      <div className="App">
-        <body>
+        <div className="App">
           {this.switchView()}
-        </body>
-      </div>
+        </div>
     );
   }
 }

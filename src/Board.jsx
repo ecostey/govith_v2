@@ -5,7 +5,9 @@ function Board(props) {
   for (let i = 0; i < props.level.length; i += 1) {
     for (let j = 0; j < props.level.length; j += 1) {
       const element = (
-        <div></div>
+        <div>
+          <p>Hello</p>
+        </div>
       );
       const currentClassName = props.level[i][j];
       element.className = 'tile';
