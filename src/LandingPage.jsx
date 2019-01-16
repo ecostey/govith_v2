@@ -15,3 +15,7 @@ function LandingPage(props) {
 }
 
 export default LandingPage;
+
+
+//TODO:
+//Style component & images

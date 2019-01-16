@@ -12,7 +12,6 @@ export const lvl1 = [
     ['O', 'goblin', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'exit']
 ];
 
-
 export const lvl2 = [
     ['start', 'O', 'O', '0', 'O', 'O', 'O', 'O', 'O', 'O'],
     ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'],
@@ -38,3 +37,6 @@ export const lvl3 = [
     ['O', 'O', 'O', 'O', 'O', '0', 'O', 'O', 'O', 'O'],
     ['O', '0', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'exit']
 ];
+
+//randomize board set up? 
+//Maze for upper levels?
